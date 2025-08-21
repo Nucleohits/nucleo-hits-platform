@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Núcleo Hits – A Plataforma da Rua</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <div class="logo">
+                    <span class="logo-icon">N</span>
+                    <span class="logo-text">NÚCLEO HITS</span>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <a href="#creators" class="nav-link">Para Criadores</a>
+                <a href="#fans" class="nav-link">Para Fãs</a>
+                <a href="#parceiros" class="nav-link">Parceiros</a>
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </div>
+            <button class="cta-button" onclick="scrollToSignup()">Chega na Beta</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="slide-bg" style="background-image: url('https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe300713424d5_2eeb3457918bde31bfed14ed509f80b6_hero-slider-cover-8.webp')"></div>
+                <div class="slide-content">
+                    <div class="floating-images">
+                        <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe300713424c3_d08ce3661a205725180d474b3cd53898_flip-pop-1.png" alt="🔥" class="floating-emoji">
+                        <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe300713424c2_b6c2aea695bd15b96e4bfaf6535e2479_flip-pop-2.png" alt="💎" class="floating-emoji">
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-bg" style="background-image: url('https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe300713424d4_a8205c64f42f4b831c38526cf87d0a93_hero-slider-cover-1.webp')"></div>
+            </div>
+            <div class="slide">
+                <div class="slide-bg" style="background-image: url('https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe300713424df_899186bf04465bbe587d2898e0a7b18b_hero-slider-cover-2.webp')"></div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Feito pra Quem Cria.<br>
+                <span class="highlight">Movido pela Rua que Pulsa.</span>
+            </h1>
+            <p class="hero-subtitle">
+                A primeira plataforma híbrida que conecta criadores periféricos e comunidade, onde cultura urbana encontra tecnologia e você ganha com o flow.
+            </p>
+            <button class="hero-cta" onclick="scrollToSignup()">Chega na Beta</button>
+        </div>
+
+        <div class="floating-elements">
+            <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe300713424ff_270d353c332d5615b1c2d040bdf8f7fe_flip-photo-3.webp" alt="Foto 1" class="floating-photo photo-1">
+            <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe300713424e3_flip-photo-1.avif" alt="Foto 2" class="floating-photo photo-2">
+            <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe300713424db_11d838b647835e6b3c12294337653f17_flip-photo-2.webp" alt="Foto 3" class="floating-photo photo-3">
+            <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe300713424fe_97b2808e474197a06a42f51a963ac0d8_flip-photo-5.webp" alt="Foto 4" class="floating-photo photo-4">
+            <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe300713424e2_483885f5c0aaefac3bf8e130dadcab41_flip-photo-4.webp" alt="Foto 5" class="floating-photo photo-5">
+        </div>
+    </section>
+
+    <!-- App Preview -->
+    <section class="app-preview">
+        <div class="container">
+            <h2 class="section-title">A Plataforma da Rua</h2>
+            <div class="app-mockup">
+                <div class="phone-frame">
+                    <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe300713424d3_fc98d38aff4dffc8afd94f42c1eab9f5_total-view.png" alt="App Núcleo Hits" class="app-screen">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creator Benefits -->
+    <section class="benefits-section creators-section" id="creators">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-subtitle">BENEFÍCIOS PARA CRIADORES</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <h4>Visibilidade</h4>
+                        <p>Sua arte chega onde precisa chegar</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>Empoderamento</h4>
+                        <p>Você no controle da sua narrativa</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>Colaboração</h4>
+                        <p>Conecta com quem faz a cena acontecer</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>Monetização</h4>
+                        <p>Ganha com o flow, sem intermediário</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fan Benefits -->
+    <section class="benefits-section fans-section" id="fans">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-subtitle">BENEFÍCIOS PARA FÃS</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <h4>Descoberta</h4>
+                        <p>Encontra o som que ainda não tocou</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>Conexão</h4>
+                        <p>Cola direto com quem faz a música</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>Influência</h4>
+                        <p>Sua voz importa na construção da cena</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>Experiência</h4>
+                        <p>Vive a música além da tela</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Beyond Screen -->
+    <section class="experience-section">
+        <div class="container">
+            <h2 class="section-title">Experiência Música<br>Além da Tela</h2>
+            <p class="section-description">
+                Núcleo Hits vai além do digital — conectamos criadores e fãs na vida real.
+            </p>
+            
+            <div class="experience-content">
+                <div class="experience-text">
+                    <h3>Shows Reais,<br>Oportunidades Reais</h3>
+                    <p>Organizamos eventos presenciais com criadores da plataforma, dando palco para o talento e conexão real com os fãs.</p>
+                </div>
+                
+                <div class="experience-visual">
+                    <div class="artist-connection">
+                        <h4>Conexão Direta Artista-Fã</h4>
+                        <div class="artist-tags">
+                            <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe30071342525_f8dc020d86a7144c5e8ddd62470509bf_values-artist-tag-1.webp" alt="Jr Martin" class="artist-tag">
+                            <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe30071342526_41b0f978da24d295ca87193c05fd1bde_values-artist-tag-2.webp" alt="Artist 2" class="artist-tag">
+                            <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe30071342519_1b8a83a73017d47924b4a6a510d2702b_values-artist-tag-3.webp" alt="Artist 3" class="artist-tag">
+                        </div>
+                        <p>Fãs não só assistem, eles encontram, interagem e apoiam seus criadores favoritos de um jeito que as redes sociais não conseguem oferecer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Empowering Creators -->
+    <section class="empowering-section">
+        <div class="container">
+            <h2 class="section-title">Empoderando Criadores<br>pra Dominar.</h2>
+            <p class="section-description">
+                Constrói, conecta e ganha com o flow tudo em um lugar — nos seus termos.
+            </p>
+            <p class="section-text">
+                Seja você um criador novo ou já estabelecido, oferecemos as ferramentas para engajar com fãs, ganhar com sua música e construir uma carreira sustentável.
+            </p>
+            
+            <button class="cta-button large" onclick="scrollToSignup()">Chega na Beta</button>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h4>Ganha com o Flow</h4>
+                    <p>Monetiza direto através de assinaturas, conteúdo pago e eventos com ingresso — você fica com 100% do que faz.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Promove & Engaja</h4>
+                    <p>Mostra sua música, conteúdo e eventos ao vivo enquanto constrói sua base de fãs ideal.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Seus Dados, Seu Poder</h4>
+                    <p>Acessa insights sobre seus top fãs, demografia, engajamento e muito mais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Fan Experience -->
+    <section class="fan-experience-section">
+        <div class="container">
+            <h2 class="section-title">Uma Experiência<br>de Fã Potencializada</h2>
+            <p class="section-description">
+                Núcleo Hits te coloca no controle. Engaja com seus criadores favoritos, explora novos talentos, acessa conteúdo exclusivo e vive a música nos seus termos.
+            </p>
+            
+            <div class="fan-features">
+                <div class="fan-feature">
+                    <h3>Conecta &<br>Engaja</h3>
+                    <div class="phone-mockups">
+                        <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe30071342602_fan-phone-2.webp" alt="Phone 1" class="phone-mockup">
+                        <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe30071342603_fan-phone-1.webp" alt="Phone 2" class="phone-mockup">
+                    </div>
+                    <p>Interage com criadores e outros fãs através de lives, mensagens diretas e comunidades lideradas por criadores</p>
+                </div>
+                
+                <div class="fan-feature">
+                    <h3>Curte Sua<br>Experiência</h3>
+                    <p>Você decide o que explorar, descobrir e com o que se engajar.</p>
+                    
+                    <div class="genre-tags">
+                        <span class="genre-tag">Gospel & Cristão</span>
+                        <span class="genre-tag">Clássico</span>
+                        <span class="genre-tag">Country</span>
+                        <span class="genre-tag">Dance/Eletrônico</span>
+                        <span class="genre-tag">Folk & Acústico</span>
+                        <span class="genre-tag">Funk & Disco</span>
+                        <span class="genre-tag">Funk</span>
+                        <span class="genre-tag">Rap</span>
+                        <span class="genre-tag">Indie & Alternativo</span>
+                        <span class="genre-tag">Instrumental</span>
+                        <span class="genre-tag">Metal</span>
+                        <span class="genre-tag">Rock</span>
+                        <span class="genre-tag">Jazz</span>
+                        <span class="genre-tag">Latino</span>
+                        <span class="genre-tag">Pop</span>
+                        <span class="genre-tag">R&B</span>
+                        <span class="genre-tag">K-Pop</span>
+                    </div>
+                </div>
+                
+                <div class="fan-feature">
+                    <h3>Desbloqueie<br>Conteúdo Exclusivo</h3>
+                    <button class="cta-button" onclick="scrollToSignup()">Chega na Beta</button>
+                    
+                    <div class="exclusive-content">
+                        <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe3007134260d_fans-figure.webp" alt="Fan Figure" class="fan-figure">
+                        <div class="content-previews">
+                            <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe30071342607_unlock-2.webp" alt="Unlock 1" class="unlock-preview">
+                            <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe3007134260b_unlock-6.webp" alt="Unlock 2" class="unlock-preview">
+                            <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe3007134260c_unlock-8.webp" alt="Unlock 3" class="unlock-preview">
+                        </div>
+                    </div>
+                    
+                    <p>Seja o primeiro a vivenciar música original, conteúdo, eventos ao vivo e momentos dos bastidores que você não encontra em nenhum outro lugar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Propositions -->
+    <section class="value-section">
+        <div class="container">
+            <div class="value-cards">
+                <div class="value-card creators-card">
+                    <h2>Valor para Criadores</h2>
+                    <button class="cta-button" onclick="scrollToSignup()">Chega na Beta</button>
+                    <p>Núcleo Hits oferece três opções poderosas de membership para criadores. Comece com o plano freemium para explorar a plataforma e vivenciar o valor em primeira mão. Quando estiver pronto para subir de nível, escolha entre dois planos upgrade projetados para te ajudar a crescer, engajar e monetizar.</p>
+                    <p>Monetize através de assinaturas, eventos com ingresso e conteúdo pago — ficando com 100% do que você faz numa plataforma feita exclusivamente para música.</p>
+                    <button class="cta-button secondary" onclick="scrollToSignup()">Chega na Beta</button>
+                </div>
+                
+                <div class="value-card fans-card">
+                    <h2>Free para<br>Fãs</h2>
+                    <button class="cta-button" onclick="scrollToSignup()">Chega na Beta</button>
+                    <p>Para fãs, Núcleo Hits é 100% gratuito, dando acesso ilimitado para descobrir novos criadores, conectar com seus favoritos e vivenciar música de um jeito totalmente novo.</p>
+                    <p>Engaja diretamente com criadores através de lives, conteúdo exclusivo e comunidades interativas — criando conexões reais além de só escutar.</p>
+                    <button class="cta-button secondary" onclick="scrollToSignup()">Chega na Beta</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Makes Us Different -->
+    <section class="different-section">
+        <div class="container">
+            <h2 class="section-title">O que nos Faz Diferente</h2>
+            <p class="section-description">
+                Outras redes sociais tratam música como só mais um conteúdo, Núcleo Hits trata como uma experiência.
+            </p>
+            
+            <div class="difference-visual">
+                <div class="image-grid">
+                    <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe30071342571_abd8f51a269cbb6081251206bb096f59_why-us-slide-7.webp" alt="Slide 1" class="grid-image">
+                    <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe30071342572_ddda8e4c71763a392bf97cf25f523aca_why-us-slide-1.webp" alt="Slide 2" class="grid-image">
+                    <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe30071342576_8b76b1bd28690762bb1df075ebe719ed_why-us-slide-2.webp" alt="Slide 3" class="grid-image">
+                    <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe30071342565_c265592b3f26a31c74eb3e73e59c0908_why-us-slide-5.webp" alt="Slide 4" class="grid-image">
+                </div>
+                
+                <div class="avatars-grid">
+                    <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe3007134253d_45781dee538831db52b55ab05662b542_why-us-avatar-2.webp" alt="Avatar 1" class="avatar">
+                    <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe30071342543_520288fc2b13a09ddc7c96c12c287e90_why-us-avatar-1.webp" alt="Avatar 2" class="avatar">
+                    <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe30071342545_cc09fff58d612d9c9d93a7a1509794e8_why-us-avatar-15.webp" alt="Avatar 3" class="avatar">
+                    <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe30071342548_9d93e5a242886b743e312e93880e2003_why-us-avatar-16.webp" alt="Avatar 4" class="avatar">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Be an Owner -->
+    <section class="owner-section">
+        <div class="container">
+            <h2 class="section-title">Seja mais que criador ou fã<br><span class="highlight">Seja Dono.</span></h2>
+            
+            <div class="owner-content">
+                <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe3007134255b_invest-avatar.avif" alt="Investor Avatar" class="investor-avatar">
+                <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe30071342524_invest-logo.avif" alt="Invest Logo" class="invest-logo">
+            </div>
+            
+            <p class="owner-text">
+                Acreditamos que o futuro da música deve pertencer à comunidade que a faz prosperar. Ao investir, você não está só apoiando uma plataforma, está ajudando a construir a primeira rede social centrada na música.
+            </p>
+            
+            <div class="investment-info">
+                <p><strong>Disponibilidade Limitada.<br>Investimento mínimo R$ 400.</strong></p>
+                <button class="cta-button" onclick="scrollToSignup()">Chega na Beta</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">O que o Povo tá Falando</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <img src="https://cdn.prod.website-files.com/6821a59ae3bfe300713425a5_image.avif" alt="Anna K." class="testimonial-avatar">
+                    <div class="testimonial-content">
+                        <div class="testimonial-header">
+                            <h4>Anna K.</h4>
+                            <img src="https://cdn.prod.website-files.com/6821a59ae3bfe3007134255e_acd46e41ce5a651ff232bafe5add3865_verefication-r.webp" alt="Verified" class="verified-badge">
+                            <span class="testimonial-date">29 de Mai</span>
+                        </div>
+                        <p>Acabei de descobrir o Núcleo Hits e cara, esse app é next level! 🚀 Tantas formas de descobrir música baseada no mood, gênero e até tracks específicas que eu amo. 🎶 Esse é o futuro dos apps de música. #MusicLovers #FutureOfMusic</p>
+                        <div class="testimonial-stats">
+                            <span>13.1k</span>
+                            <span>11.2k</span>
+                            <span>36.3k</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342578_53aa36b7fc177da9a9c02c7a1951dd5a_review-avatar-1.webp" alt="Jake W." class="testimonial-avatar">
+                    <div class="testimonial-content">
+                        <div class="testimonial-header">
+                            <h4>Jake W.</h4>
+                            <img src="https://cdn.prod.website-files.com/6821a59ae3bfe3007134255e_acd46e41ce5a651ff232bafe5add3865_verefication-r.webp" alt="Verified" class="verified-badge">
+                            <span class="testimonial-date">12 de Abr</span>
+                        </div>
+                        <p>Essa é a primeira vez que vejo um app que realmente prioriza criadores e conexão ao invés de clout. 👏 Já era hora! 🙌 #CreatorFirst #MusicInnovation</p>
+                        <div class="testimonial-stats">
+                            <span>13.1k</span>
+                            <span>11.2k</span>
+                            <span>36.3k</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342561_911bd69732d7194fd29a5c81ec9d5b6f_review-avatar-2.webp" alt="Mia S." class="testimonial-avatar">
+                    <div class="testimonial-content">
+                        <div class="testimonial-header">
+                            <h4>Mia S.</h4>
+                            <img src="https://cdn.prod.website-files.com/6821a59ae3bfe3007134255e_acd46e41ce5a651ff232bafe5add3865_verefication-r.webp" alt="Verified" class="verified-badge">
+                            <span class="testimonial-date">3 de Mar</span>
+                        </div>
+                        <p>Esse app é diferente, no melhor sentido. É tudo que eu estava procurando numa plataforma de música! 🌟 #NextGenMusic</p>
+                        <div class="testimonial-stats">
+                            <span>102</span>
+                            <span>91</span>
+                            <span>253</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342560_2d0ac6c37e11f13ccc7b4e915829e195_review-avatar-3.webp" alt="John P." class="testimonial-avatar">
+                    <div class="testimonial-content">
+                        <div class="testimonial-header">
+                            <h4>John P.</h4>
+                            <img src="https://cdn.prod.website-files.com/6821a59ae3bfe3007134255e_acd46e41ce5a651ff232bafe5add3865_verefication-r.webp" alt="Verified" class="verified-badge">
+                            <span class="testimonial-date">17 de Fev</span>
+                        </div>
+                        <p>Parece que você faz parte da ascensão, não só assistindo ela acontecer. É isso que faz o Núcleo Hits especial. 🔥 #MusicJourney #JoinTheMovement</p>
+                        <div class="testimonial-stats">
+                            <span>156</span>
+                            <span>123</span>
+                            <span>448</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signup Section -->
+    <section class="signup-section" id="signup">
+        <div class="container">
+            <h2 class="section-title">Chega na Beta</h2>
+            
+            <div class="signup-tabs">
+                <button class="tab-button active" onclick="switchTab('creator')">Criador</button>
+                <button class="tab-button" onclick="switchTab('fan')">Fã</button>
+            </div>
+            
+            <!-- Creator Form -->
+            <form class="signup-form active" id="creatorForm">
+                <h3>Seus Detalhes</h3>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="creatorFirstName">Seu nome*</label>
+                        <input type="text" id="creatorFirstName" name="firstName" required>
+                        <span class="error-message">Por favor, complete este campo obrigatório.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="creatorLastName">Sobrenome</label>
+                        <input type="text" id="creatorLastName" name="lastName">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="stageName">Nome artístico*</label>
+                    <input type="text" id="stageName" name="stageName" required>
+                    <span class="error-message">Por favor, complete este campo obrigatório.</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="creatorEmail">Email*</label>
+                    <input type="email" id="creatorEmail" name="email" required>
+                    <span class="error-message">Por favor, insira um email válido.</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="creatorCity">Localização da cidade*</label>
+                    <input type="text" id="creatorCity" name="city" required>
+                    <span class="error-message">Por favor, complete este campo obrigatório.</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="creatorType">Selecione o tipo de criador:</label>
+                    <select id="creatorType" name="creatorType" required>
+                        <option value="">Selecione...</option>
+                        <option value="artist">Artista</option>
+                        <option value="band">Banda</option>
+                        <option value="curator">Curador</option>
+                        <option value="dj">DJ</option>
+                        <option value="educator">Educador</option>
+                        <option value="musician">Músico</option>
+                        <option value="podcaster">Podcaster</option>
+                        <option value="producer">Produtor</option>
+                        <option value="venue">Venue</option>
+                        <option value="singer-songwriter">Cantor-compositor</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="creatorPlatform">Selecione uma plataforma:</label>
+                    <select id="creatorPlatform" name="platform" required>
+                        <option value="">Selecione...</option>
+                        <option value="ios">iOS</option>
+                        <option value="android">Android</option>
+                    </select>
+                </div>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="creatorAge" name="ageConfirm" required>
+                    <label for="creatorAge">Confirmo que tenho mais de 13 anos</label>
+                </div>
+                
+                <button type="submit" class="submit-button">Chega na Beta</button>
+            </form>
+            
+            <!-- Fan Form -->
+            <form class="signup-form" id="fanForm">
+                <h3>Seus Detalhes</h3>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fanFirstName">Seu nome*</label>
+                        <input type="text" id="fanFirstName" name="firstName" required>
+                        <span class="error-message">Por favor, complete este campo obrigatório.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="fanLastName">Sobrenome</label>
+                        <input type="text" id="fanLastName" name="lastName">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="fanUsername">Nome de usuário*</label>
+                    <input type="text" id="fanUsername" name="username" required>
+                    <span class="error-message">Por favor, complete este campo obrigatório.</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="fanEmail">Email*</label>
+                    <input type="email" id="fanEmail" name="email" required>
+                    <span class="error-message">Por favor, insira um email válido.</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="fanCity">Localização da cidade*</label>
+                    <input type="text" id="fanCity" name="city" required>
+                    <span class="error-message">Por favor, complete este campo obrigatório.</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="fanPlatform">Selecione uma plataforma:</label>
+                    <select id="fanPlatform" name="platform" required>
+                        <option value="">Selecione...</option>
+                        <option value="ios">iOS</option>
+                        <option value="android">Android</option>
+                    </select>
+                </div>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="fanAge" name="ageConfirm" required>
+                    <label for="fanAge">Confirmo que tenho mais de 13 anos</label>
+                </div>
+                
+                <button type="submit" class="submit-button">Chega na Beta</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <img src="https://cdn.prod.website-files.com/6821a59ae3bfe30071342488/6821a59ae3bfe30071342612_success-icon.jpg" alt="Success">
+            <h3>Valeu por<br>Chegar Junto!</h3>
+            <p>Vamos te mandar um email com seu acesso beta em breve. Mal podemos esperar pra ter você na equipe.</p>
+            <button class="modal-button" id="modalButton">Beleza</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#contato">Fale Conosco</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Produto</h4>
+                    <ul>
+                        <li><a href="#creators">Para criadores</a></li>
+                        <li><a href="#fans">Para fãs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Parceiros</h4>
+                    <ul>
+                        <li><a href="#parceiros">Patrocinadores</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#privacy">Política de Privacidade</a></li>
+                        <li><a href="#terms">Termos de Uso – Todos os Usuários</a></li>
+                        <li><a href="#terms-creators">Termos de Uso – Criadores</a></li>
+                        <li><a href="#copyright">Violação de Direitos Autorais</a></li>
+                        <li><a href="#dmca">Aviso DMCA</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                    <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+                </div>
+                <p>&copy; 2024 Núcleo Hits. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
